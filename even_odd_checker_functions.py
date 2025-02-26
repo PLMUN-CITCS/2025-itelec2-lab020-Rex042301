@@ -1,23 +1,20 @@
 # Function to handle user input and return an integer
 def get_integer_input():
-    # Prompt user to enter an integer
     user_input = input("Please enter an integer: ")
     
-    # Convert the input to an integer and return it
     try:
         return int(user_input)
     except ValueError:
         print("Invalid input. Please enter a valid integer.")
-        return get_integer_input()  # Recursively ask again if the input is not valid
+        return get_integer_input()
 
-# Function to determine if the given number is even or odd
 def check_even_odd(number):
-    # Check if the number is even or odd using modulo operator
     if number % 2 == 0:
         return f"{number} is an Even number."
-    else:
+    if number % 2 == 1:
         return f"{number} is an Odd number."
-
+    else: 
+        return f"{user_input} is invalid."
 # Main program flow
 def main():
     # Get integer input from the user
