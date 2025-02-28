@@ -12,15 +12,10 @@ def check_even_odd(number):
     if number % 2 == 0:
         return f"{number} is an Even number."
     if number % 2 == 1:
-        return f"{number} is an Odd number."
-    else: 
-        return f"{user_input} is invalid."
-# Main program flow
+        return f"{number} is an Odd number." 
+    # Main program flow
 def main():
-    # Get integer input from the user
     number = get_integer_input()
-    
-    # Determine if the number is even or odd and display the result
     result = check_even_odd(number)
     print(result)
 
