@@ -8,7 +8,7 @@ def get_integer_input():
         print("Invalid input. Please enter a valid integer.")
         return get_integer_input()
 
-def check_even_odd(number: int) -> str:
+def check_even_odd(number: float) -> str:
     if number % 2 == 0:
         return(f"the {number} is an Even number.")
     if number % 2 == 1:
